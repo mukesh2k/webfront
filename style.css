@@ -61,11 +61,25 @@ img.medium {
   width: 100%;
 }
 .card {
-  border: 0.1rem;
+  border: 0.1rem gray solid;
   background-color: white;
   border-right: 0.5rem;
   margin: 1rem;
 }
 .card-bd {
   padding: 1rem;
+}
+.card-bd > * {
+  margin-bottom: 0.5rem;
+}
+h2.prize {
+  font-size: 2rem;
+}
+.rate span {
+  color: gold;
+  margin: 0.1rem;
+}
+.sty {
+  height: 400px;
+  width: 200px;
 }

@@ -1,23 +1,113 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="grid-con">
+      <header className="row">
+        <div>
+          <a className="brand" href="index.html">
+            Website
+          </a>
+        </div>
+        <div>
+          <a href="cart.html">cart</a>
+          <a href="signin.html">signin</a>
+        </div>
       </header>
+      <main>
+        <div className="row center">
+          <div className="card">
+            <a href="photo.html">
+              <img src="img/photo.jpg" alt="" className="sty" />
+            </a>
+            <div className="card-bd">
+              <a href="photo.html">
+                <h2>PHONE</h2>
+              </a>
+              <div className="rate">
+                <span>
+                  <i className="fa fa-star"></i>
+                </span>
+                <span>
+                  <i className="fa fa-star"></i>
+                </span>
+                <span>
+                  <i className="fa fa-star"></i>
+                </span>
+                <span>
+                  <i className="fa fa-star"></i>
+                </span>
+                <span>
+                  <i className="fa fa-star"></i>
+                </span>
+              </div>
+              <div className="prize">
+                <h2>120$</h2>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <a href="photo.html">
+              <img src="img/photo.jpg" alt="" className="sty" />
+            </a>
+            <div className="card-bd">
+              <a href="photo.html">
+                <h2>PHONE</h2>
+              </a>
+              <div className="rate">
+                <span>
+                  <i className="fa fa-star"></i>
+                </span>
+                <span>
+                  <i className="fa fa-star"></i>
+                </span>
+                <span>
+                  <i className="fa fa-star"></i>
+                </span>
+                <span>
+                  <i className="fa fa-star"></i>
+                </span>
+                <span>
+                  <i className="fa fa-star"></i>
+                </span>
+              </div>
+              <div className="prize">
+                <h2>120$</h2>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <a href="photo.html">
+              <img src="img/photo.jpg" alt="" className="sty" />
+            </a>
+            <div className="card-bd">
+              <a href="photo.html">
+                <h2>PHONE</h2>
+              </a>
+              <div className="rate">
+                <span>
+                  <i className="fa fa-star"></i>
+                </span>
+                <span>
+                  <i className="fa fa-star"></i>
+                </span>
+                <span>
+                  <i className="fa fa-star"></i>
+                </span>
+                <span>
+                  <i className="fa fa-star"></i>
+                </span>
+                <span>
+                  <i className="fa fa-star"></i>
+                </span>
+              </div>
+              <div className="prize">
+                <h2>120$</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer className="row center">All rights reserved</footer>
     </div>
   );
 }
