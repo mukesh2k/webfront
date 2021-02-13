@@ -37,11 +37,51 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.row.top {
+  align-items: flex-start;
+}
+.col-1 {
+  flex: 1 1 25rem;
+}
+.col-2 {
+  flex: 2 1 50rem;
+  align-items: center;
+}
 a {
   text-decoration: none;
 }
 a:hover {
   color: tomato;
+}
+ul {
+  padding: 1rem;
+  list-style-type: none;
+  margin: 0;
+}
+li {
+  margin-top: 0.5rem;
+}
+button {
+  padding: 1rem;
+
+  font-size: 1.6rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 0.5rem;
+  border: 0.1rem aliceblue solid;
+  background-color: rgb(197, 188, 188);
+  cursor: pointer;
+}
+button:hover {
+  border: black 0.1rem solid;
+}
+button.primary {
+  background-color: rgb(245, 186, 39);
+}
+button.block {
+  width: 100%;
 }
 header a {
   padding: 1rem;
@@ -60,6 +100,9 @@ img {
 }
 img.medium {
   max-width: 29rem;
+  width: 100%;
+}
+img.large {
   width: 100%;
 }
 .card {
@@ -92,4 +135,10 @@ h2.prize {
   height: 630px;
   width: 400px;
   margin: 2rem;
+}
+.success {
+  color: rgb(6, 240, 6);
+}
+.error {
+  color: red;
 }
