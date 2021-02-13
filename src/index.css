@@ -85,3 +85,11 @@ h2.prize {
   height: 630px;
   width: 350px;
 }
+.rate span:last-child {
+  color: black;
+}
+.col-2 img {
+  height: 630px;
+  width: 400px;
+  margin: 2rem;
+}
