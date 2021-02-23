@@ -1,6 +1,6 @@
 import { BrowserRouter, Route } from "react-router-dom";
-import homescreen from "./screen/homescreen";
-import productscreen from "./screen/productscreen";
+import Homescreen from "./screen/Homescreen";
+import Productscreen from "./screen/Productscreen";
 function App() {
   return (
     <BrowserRouter>
@@ -17,8 +17,8 @@ function App() {
           </div>
         </header>
         <main>
-          <Route path="/product/:id" component={productscreen}></Route>
-          <Route path="/" component={homescreen} exact></Route>
+          <Route path="/product/:id" component={Productscreen}></Route>
+          <Route path="/" component={Homescreen} exact></Route>
         </main>
         <footer className="row center">All rights reserved</footer>
       </div>

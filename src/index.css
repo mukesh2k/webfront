@@ -20,16 +20,16 @@ body {
 }
 header {
   grid-area: header;
-  background-color: blueviolet;
+  background-color: rgb(35, 31, 66);
 }
 main {
   grid-area: main;
   padding: 1;
-  background-color: wheat;
+  background-color: rgb(255, 255, 255);
 }
 footer {
   grid-area: footer;
-  background-color: blueviolet;
+  background-color: rgb(35, 31, 66);
 }
 .row {
   display: flex;
@@ -107,7 +107,7 @@ img.large {
 }
 .card {
   border: 0.1rem gray solid;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.801);
   border-right: 0.5rem;
   margin: 1rem;
 }
