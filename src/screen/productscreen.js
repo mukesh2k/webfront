@@ -1,26 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import Rating from "../components/Rating";
+import { useSelector, useDispatch } from "react-redux";
+import LoadBox from "../screen/Loadscreen";
+import Error from "../screen/ErorBox";
+import { detailProducts } from "../actions/productActions";
 export default function Productscreen(props) {
-  const [Products, setProducts] = useState([]);
+  const dispatch = useDispatch();
+  const pid = props.match.params.id;
+  const productDetails = useSelector((state) => state.productDetails);
+  const { loading, error, product } = productDetails;
   useEffect(() => {
-    const fetchdata = async () => {
-      const { data } = await axios.get("/api/products");
-      setProducts(data);
-    };
-    fetchdata();
-  }, []);
-  const product = Products.find((x) => x.id == props.match.params.id);
-  if (!product) {
-    return (
-      <div>
-        <h2></h2>
-        <h2>{props.match.params.id}</h2>
-      </div>
-    );
-  }
-  return (
+    dispatch(detailProducts(pid));
+  }, [dispatch, pid]);
+  return loading ? (
+    <LoadBox />
+  ) : error ? (
+    <Error>{error}</Error>
+  ) : (
     <div className="row top">
       <Link to="/">Back to results</Link>
       <div className="col-2">
